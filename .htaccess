@@ -1,8 +1,0 @@
-Options -MultiViews
-RewriteEngine On
-RewriteBase /dist/test-angular/ # Reemplaza con la ruta real a tu proyecto
-
-# Redirigir todas las solicitudes a index.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.html [L]
